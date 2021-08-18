@@ -116,7 +116,7 @@ struct CountryDetail:View {
            URLImage(url: Constants.Urls.weatherUrlAsStringByIcon(icon: icon))  .frame(width: 80, height: 80)
                     
                 HStack{
-                    Text("\(Int(temperature)) C°").font(.system(size: 70,weight: .medium)).foregroundColor(.white)
+                    Text("\(Int(temperature))° C").font(.system(size: 70,weight: .medium)).foregroundColor(.white)
                     
                
                 }
@@ -164,7 +164,7 @@ struct WeatherCell: View {
             }
             Spacer()
           
-            Text("\(Int(weather.temperature)) C")
+            Text("\(Int(weather.temperature)) °C")
                 
                 .frame(width: 50, height: 50)
         
